@@ -290,13 +290,13 @@
       <t>For example, suppose the OSPFv2 instance on a router is used
       for MPLS TE calculation and the OSPFv3 instance will use those
       LSPs for X-AF routing. Further suppose that OSPFv2 advertises
-      IPv4 address 1.1.1.1 in Router Address TLV (plus other Traffic
+      IPv4 address 198.51.100.1 in Router Address TLV (plus other Traffic
       Engineering TLVs as required by <xref target="RFC3630"/>), and
-      additional local IPv4 addresses 1.1.1.2 and 1.1.1.3 in the Node
+      additional local IPv4 addresses 198.51.100.2 and 198.51.100.3 in the Node
       IPv4 Local Address sub-TLV as described in <xref
       target="RFC5786"/>. For X-AF routing, the OSPFv3 instance will
       advertise the Node IPv4 Local Address sub-TLV listing the local
-      IPv4 addresses 1.1.1.1, 1.1.1.2 and 1.1.1.3.</t>
+      IPv4 addresses 198.51.100.1, 198.51.100.2 and 198.51.100.3.</t>
       
       <t>During the X-AF routing calculation, X-AF IP addresses are
       used to map locally created LSPs to tail-end routers in the
@@ -338,6 +338,9 @@
       the efficiency may choose to support equivalent mapping
       functionality without implementing the algorithm exactly as it
       is described.</t>
+    </section>
+
+    <section title="Backward Compatibility" toc="default">
     </section>
 
     <section title="Security Considerations" toc="default">
