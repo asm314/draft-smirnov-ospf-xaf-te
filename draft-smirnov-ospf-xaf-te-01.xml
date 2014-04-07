@@ -197,7 +197,8 @@
       
       <t>For example, an LSP created based on MPLS TE information
       propagated by OSPFv2 instance can be defined to carry both IPv4
-      and IPv6 traffic, instead of having multiple LSPs one for each
+      and IPv6 traffic, instead of having both OSPFv2 and OSPFv3
+      to provision a separate LSP for each
       address family. Even if in some cases the address
       family-specific traffic is to be separated, the calculation from
       a common database may prove operationally beneficial.</t>
