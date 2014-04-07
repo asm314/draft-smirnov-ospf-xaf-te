@@ -342,6 +342,39 @@
     </section>
 
     <section title="Backward Compatibility" toc="default">
+      <t>Node Attribute TLV and Node Local Address sub-TLVs and
+      their usage are defined in <xref target="RFC5786"/> and
+      updated by <xref target="RFC6827"/>. Way of using these
+      TLVs as specified in this document is fully backward
+      compatible with previous standard documents.</t>
+
+      <t>An implementation processing Node Attribute TLV MUST
+      interpret its content as follows:
+
+	<list>
+	<t>If the Node Attribute TLV contains Local TE Router ID
+	sub-TLV then this Node Attribute TLV MUST be treated as
+	carrying routing information for ASON and processed as
+	specified in <xref target="RFC6827"/>.</t>
+
+	<t>Otherwise Node Attribute TLV contains one or more
+	instance(s) of Node IPv4 Local Address and/or Node IPv6
+	Local Address sub-TLVs. Meaning of each Local Address
+	sub-TLV has to be identified separately.
+
+	  <list>
+	  <t>If Node Local Address sub-TLV belongs to the same
+	  address family as instance of OSPF protocol then
+	  address carried in the sub-TLV MUST be treated as
+	  described in <xref target="RFC5786"/>.</t>
+
+	  <t>Otherwise the address is used for X-AF tunnel
+	  tail-end mapping as defined by this document.</t>
+
+	  </list>
+	</t>
+	</list>
+      </t>
     </section>
 
     <section title="Security Considerations" toc="default">
