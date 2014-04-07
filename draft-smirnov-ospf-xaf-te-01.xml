@@ -351,7 +351,7 @@
       <t>An implementation processing Node Attribute TLV MUST
       interpret its content as follows:
 
-	<list>
+	<list style="symbols">
 	<t>If the Node Attribute TLV contains Local TE Router ID
 	sub-TLV then this Node Attribute TLV MUST be treated as
 	carrying routing information for ASON and processed as
