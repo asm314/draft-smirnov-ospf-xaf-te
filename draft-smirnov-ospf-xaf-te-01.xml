@@ -364,8 +364,8 @@
 
 	  <list>
 	  <t>If Node Local Address sub-TLV belongs to the same
-	  address family as instance of OSPF protocol then
-	  address carried in the sub-TLV MUST be treated as
+	  address family as instance of OSPF protocol advertising it
+	  then address carried in the sub-TLV MUST be treated as
 	  described in <xref target="RFC5786"/>.</t>
 
 	  <t>Otherwise the address is used for X-AF tunnel
