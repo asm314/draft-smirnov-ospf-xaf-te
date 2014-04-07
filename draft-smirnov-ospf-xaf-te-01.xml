@@ -35,7 +35,7 @@
 <?rfc subcompact="no" ?>
 <!-- keep one blank line between list items -->
 <!-- end of list of popular I-D processing instructions -->
-<rfc category="std" docName="draft-smirnov-ospf-xaf-te-00" ipr="trust200902"
+<rfc category="std" docName="draft-smirnov-ospf-xaf-te-01" ipr="trust200902"
      obsoletes="" submissionType="IETF" updates="5786" xml:lang="en">
   <!-- category values: std, bcp, info, exp, and historic
      ipr values: full3667, noModification3667, noDerivatives3667
